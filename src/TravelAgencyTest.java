@@ -6,7 +6,6 @@
 */
 import utils.*;
 
-
 public class TravelAgencyTest {
 
     public static void main(String[] args) {
@@ -16,13 +15,15 @@ public class TravelAgencyTest {
         MainMenu.PrintMainMenu();
         switch (Keyboard.InputNumber()) {
             case Constants.SELECT_TOUR:
-
+                TourMenu.RunTourMenu();
                 break;
             case Constants.SORT_TOUR:
-
+                /*Tours = SortTour.sortTour(Tours);*/
                 break;
+            case Constants.SHOW_CHOICE:
+                /**/
             case Constants.EXIT:
-                System.out.println("До свидания! Хорошего дня!");
+                System.out.println(Constants.GOOD_BYE_MESSAGE);
                 System.exit(0);
                 break;
         }
