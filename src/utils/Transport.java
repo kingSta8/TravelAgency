@@ -7,5 +7,5 @@
 package utils;
 
 public enum Transport {
-    bus, plane, train, ship
+    автобус, самолет, поезд, лайнер
 }

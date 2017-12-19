@@ -7,5 +7,5 @@
 package utils;
 
 public enum Type {
-    rest, excursion, treatment, shopping, cruise
+    отдых, экскурсия, лечение, шоппинг, круиз
 }

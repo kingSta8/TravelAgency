@@ -36,4 +36,23 @@ public class Tour {
         return "Tour [name=" + name + ", type=" + type + ", days=" + days + ", food=" + food + ", transport=" + transport + "]";
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public int getDays() {
+        return days;
+    }
+
+    public Food getFood() {
+        return food;
+    }
+
+    public Transport getTransport() {
+        return transport;
+    }
 }

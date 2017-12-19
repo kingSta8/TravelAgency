@@ -16,7 +16,7 @@ public class TourMenu {
         System.out.println("4. Шоппинг.");
         System.out.println("5. Круиз.");
         System.out.println("0. Вернуться к предыдущему меню.");
-        System.out.println("Выберите команду: ");
+        System.out.print("Выберите команду: ");
 
         switch (Keyboard.InputNumber()) {
             case Constants.REST:

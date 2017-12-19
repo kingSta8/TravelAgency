@@ -15,7 +15,7 @@ public class TravelAgencyTest {
         MainMenu.PrintMainMenu();
         switch (Keyboard.InputNumber()) {
             case Constants.SELECT_TOUR:
-                TourMenu.RunTourMenu();
+                SelectTour.SelectingTour();
                 break;
             case Constants.SORT_TOUR:
                 /*Tours = SortTour.sortTour(Tours);*/
