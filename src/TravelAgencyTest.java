@@ -4,7 +4,11 @@
 * @date December2017
 * @author George Stahovsky
 */
+import beans.*;
 import utils.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TravelAgencyTest {
 
@@ -12,20 +16,26 @@ public class TravelAgencyTest {
         System.out.println(Constants.HELLO_MESSAGE);
         System.out.println(Constants.HELLO_MESSAGE2);
 
-        MainMenu.PrintMainMenu();
-        switch (Keyboard.InputNumber()) {
-            case Constants.SELECT_TOUR:
-                SelectTour.SelectingTour();
-                break;
-            case Constants.SORT_TOUR:
+        List<Tour> Travel = new ArrayList<Tour>();
+        YourTravel Tours = new YourTravel("ChosenTours", 0, Travel);
+
+        while (true) {
+            MainMenu.PrintMainMenu();
+            switch (Keyboard.InputNumber()) {
+                case Constants.SELECT_TOUR:
+                    Tours = SelectTour.SelectingTour(Tours);
+                    break;
+                case Constants.SORT_TOUR:
                 /*Tours = SortTour.sortTour(Tours);*/
-                break;
-            case Constants.SHOW_CHOICE:
+                    break;
+                case Constants.SHOW_CHOICE:
                 /**/
-            case Constants.EXIT:
-                System.out.println(Constants.GOOD_BYE_MESSAGE);
-                System.exit(0);
-                break;
+                    break;
+                case Constants.EXIT:
+                    System.out.println(Constants.GOOD_BYE_MESSAGE);
+                    System.exit(0);
+                    break;
+            }
         }
     }
 }

@@ -28,7 +28,6 @@ public class Tour {
     }
 
     public Tour() {
-
     }
 
     @Override

@@ -10,6 +10,9 @@ public class Constants {
     public static final String HELLO_MESSAGE = "Вас приветствует турагентство 'Неистовый турист'! Мы поможем Вам в подборе интересующего Вас отдыха.";
     public static final String HELLO_MESSAGE2 = "Пожалуйста, выберите интересующую Вас категорию.";
     public static final String GOOD_BYE_MESSAGE = "До свидания! Хорошего дня!";
+    public static final String REPEAT_MESSAGE = "Упс! Что-то пошло не так. Пожалуйста, повторите ввод.";
+    public static final String RETURN_MESSAGE = "Для возврата в предыдущее меню ниже введите 0.";
+    public static final String CHOSE_TOUR = "Выберите интересующий вас тур: ";
     public static final int SELECT_TOUR = 1;
     public static final int REST = SELECT_TOUR;
     public static final int SORT_TOUR = 2;
