@@ -26,10 +26,10 @@ public class TravelAgencyTest {
                     Tours = SelectTour.SelectingTour(Tours);
                     break;
                 case Constants.SORT_TOUR:
-                /*Tours = SortTour.sortTour(Tours);*/
+                    Tours = SortTour.SortingTour(Tours);
                     break;
                 case Constants.SHOW_CHOICE:
-                /**/
+                /*Tours = ShowChoice.ShowingChoice(Tours);*/
                     break;
                 case Constants.EXIT:
                     System.out.println(Constants.GOOD_BYE_MESSAGE);
