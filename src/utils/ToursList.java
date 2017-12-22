@@ -22,7 +22,7 @@ public class ToursList {
      list.add(new Tour("Поиграем в Сталкера, экскурсия на ЧАЭС", Type.экскурсия, 7, Food.FullBoard, Transport.автобус));
      list.add(new Tour("Магазы для бичей", Type.шоппинг, 2, Food.None, Transport.автобус));
      list.add(new Tour("Малахов+", Type.лечение, 14, Food.AllInclusivePremium, Transport.автобус));
-     list.add(new Tour("Будь осторожен в нашем гетто, Германия за 3 дня", Type.экскурсия, 3, Food.AllInclusive, Transport.поезд));
+     list.add(new Tour("Будь осторожен в нашем гетто, Германия за неделю", Type.экскурсия, 7, Food.AllInclusive, Transport.поезд));
      list.add(new Tour("Бас-тур на прощальный концерт HIM", Type.отдых, 3, Food.None, Transport.автобус));
      list.add(new Tour("Контрольная закупка", Type.шоппинг, 2, Food.FullBoard, Transport.автобус));
      list.add(new Tour("Роскошь бутиков", Type.шоппинг, 10, Food.UltraAllInclusive, Transport.самолет));

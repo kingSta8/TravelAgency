@@ -6,6 +6,10 @@
 */
 package utils;
 
+import beans.Tour;
+
+import java.util.List;
+
 public class TypeMenu {
     public static void RunTypeMenu() {
         System.out.println("Выберите тип тура.");
@@ -17,10 +21,12 @@ public class TypeMenu {
         System.out.println("0. Вернуться к предыдущему меню.");
         System.out.print("Выберите команду: ");
 
+        List<Tour> list = ToursList.fillToursList();
+
         while (true) {
             switch (Keyboard.InputNumber()) {
                 case Constants.REST:
-
+                    SortByRest.SortingByRest(list);
                     break;
                 case Constants.EXCURSION:
 
