@@ -19,7 +19,7 @@ public class ToursList {
      list.add(new Tour("Карловы Вары отдых 50+", Type.лечение, 14, Food.AllInclusive, Transport.автобус));
      list.add(new Tour("Затерянные в Амстердаме", Type.отдых, 12, Food.UltraAllInclusive, Transport.автобус));
      list.add(new Tour("Если сломался Алиэкспресс, круиз Шанхай-Хососима-Токио", Type.круиз, 15, Food.FullBoardPlus, Transport.лайнер));
-     list.add(new Tour("Поиграем в Сталкера", Type.экскурсия, 7, Food.FullBoard, Transport.автобус));
+     list.add(new Tour("Поиграем в Сталкера, экскурсия на ЧАЭС", Type.экскурсия, 7, Food.FullBoard, Transport.автобус));
      list.add(new Tour("Магазы для бичей", Type.шоппинг, 2, Food.None, Transport.автобус));
      list.add(new Tour("Малахов+", Type.лечение, 14, Food.AllInclusivePremium, Transport.автобус));
      list.add(new Tour("Будь осторожен в нашем гетто, Германия за 3 дня", Type.экскурсия, 3, Food.AllInclusive, Transport.поезд));

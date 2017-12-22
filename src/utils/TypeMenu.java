@@ -7,7 +7,7 @@
 package utils;
 
 public class TypeMenu {
-    public static void PrintTypeMenu() {
+    public static void RunTypeMenu() {
         System.out.println("Выберите тип тура.");
         System.out.println("1. Отдых.");
         System.out.println("2. Экскурсии.");
@@ -16,5 +16,28 @@ public class TypeMenu {
         System.out.println("5. Круиз.");
         System.out.println("0. Вернуться к предыдущему меню.");
         System.out.print("Выберите команду: ");
+
+        while (true) {
+            switch (Keyboard.InputNumber()) {
+                case Constants.REST:
+
+                    break;
+                case Constants.EXCURSION:
+
+                    break;
+                case Constants.TREATMENT:
+
+                    break;
+                case Constants.SHOPPING:
+
+                    break;
+                case Constants.CRUISE:
+
+                    break;
+                case Constants.EXIT:
+
+                    break;
+            }
+        }
     }
 }

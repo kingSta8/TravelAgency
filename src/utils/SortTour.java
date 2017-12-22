@@ -14,33 +14,26 @@ public class SortTour {
         int number = -1;
         while (number != Constants.EXIT) {
             System.out.println();
-            TypeMenu.PrintTypeMenu();
-
-
-            /*while (true) {
+            SortingMenu.PrintSortingMenu();
+            while (true) {
                 switch (Keyboard.InputNumber()) {
-                    case Constants.REST:
+                    case Constants.TYPE:
+                        TypeMenu.RunTypeMenu();
+                        break;
+                    case Constants.DAYS:
 
                         break;
-                    case Constants.EXCURSION:
+                    case Constants.FOOD:
 
                         break;
-                    case Constants.TREATMENT:
-
-                        break;
-                    case Constants.SHOPPING:
-
-                        break;
-                    case Constants.CRUISE:
+                    case Constants.TRANSPORT:
 
                         break;
                     case Constants.EXIT:
 
                         break;
                 }
-            }*/
-
-
+            }
         }
         return Tours;
     }
