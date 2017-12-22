@@ -18,7 +18,7 @@ public class SortTour {
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.TYPE:
-                        TypeMenu.RunTypeMenu();
+                        TypeMenu.RunTypeMenu(Tours);
                         break;
                     case Constants.DAYS:
 
@@ -30,7 +30,6 @@ public class SortTour {
 
                         break;
                     case Constants.EXIT:
-
                         break;
                 }
             }

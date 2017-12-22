@@ -7,11 +7,12 @@
 package utils;
 
 import beans.Tour;
+import beans.YourTravel;
 
 import java.util.List;
 
 public class TypeMenu {
-    public static void RunTypeMenu() {
+    public static YourTravel RunTypeMenu(YourTravel Tours) {
         System.out.println("Выберите тип тура.");
         System.out.println("1. Отдых.");
         System.out.println("2. Экскурсии.");
@@ -21,12 +22,10 @@ public class TypeMenu {
         System.out.println("0. Вернуться к предыдущему меню.");
         System.out.print("Выберите команду: ");
 
-        List<Tour> list = ToursList.fillToursList();
-
         while (true) {
             switch (Keyboard.InputNumber()) {
                 case Constants.REST:
-                    SortByRest.SortingByRest(list);
+                    SortByRest.SortingByRest(Tours);
                     break;
                 case Constants.EXCURSION:
 
