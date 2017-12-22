@@ -8,17 +8,18 @@ package utils;
 
 import beans.Tour;
 
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 public class SortByRest {
     public static void SortingByRest(List<Tour> list) {
-        Collections.sort(list, new Comparator<Tour>() {
-            @Override
-            public int compare(Tour o1, Tour o2) {
-                return 0;
-            }
-        });
+        list = ToursList.fillToursList();
+        Iterator<Tour> iter = list.iterator();
+        while (iter.hasNext()) {
+            Tour next = iter.next();
+            if (next.getType().equals(Type.круиз) || next.getType().equals(Type.шоппинг) || next.getType().equals(Type.лечение) || next.getType().equals(Type.экскурсия)) iter.remove();
+        }
+        PrintTourList.printTourList(list);
+        
     }
 }
