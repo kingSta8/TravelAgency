@@ -4,7 +4,9 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils;
+package utils.menus;
+
+import utils.Constants;
 
 public class SortingMenu {
     public static void PrintSortingMenu() {

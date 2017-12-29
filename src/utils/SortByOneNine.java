@@ -1,13 +1,14 @@
 package utils;
 
 import beans.Tour;
+import beans.Type;
 import beans.YourTravel;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class TwentyPlus {
-    public static YourTravel SortingByTwentyPlus(YourTravel Tours) {
+public class SortByOneNine {
+    public static YourTravel SortingByOneNine(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -16,7 +17,7 @@ public class TwentyPlus {
             Iterator<Tour> iter = list.iterator();
             while (iter.hasNext()) {
                 Tour next = iter.next();
-                for (int i = 1; i < 20; i++) {
+                for (int i=10; i<100; i++) {
                     if (next.getDays() == i)
                         iter.remove();
                 }

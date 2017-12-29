@@ -1,6 +1,7 @@
-package utils;
+package utils.menus;
 
 import beans.YourTravel;
+import utils.*;
 
 public class DaysMenu {
     public static YourTravel RunDaysMenu(YourTravel Tours) {
@@ -16,13 +17,13 @@ public class DaysMenu {
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.ONE_NINE:
-                        OneNine.SortingByOneNine(Tours);
+                        SortByOneNine.SortingByOneNine(Tours);
                         break;
                     case Constants.TEN_TWENTY:
-                        TenTwenty.SortingByTenTwenty(Tours);
+                        SortByTenTwenty.SortingByTenTwenty(Tours);
                         break;
                     case Constants.TWENTY_PLUS:
-                        TwentyPlus.SortingByTwentyPlus(Tours);
+                        SortByTwentyPlus.SortingByTwentyPlus(Tours);
                         break;
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);

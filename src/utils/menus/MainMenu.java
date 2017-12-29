@@ -4,7 +4,9 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils;
+package utils.menus;
+
+import utils.Constants;
 
 public class MainMenu {
 public static void PrintMainMenu() {

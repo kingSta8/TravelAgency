@@ -4,9 +4,10 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils;
+package utils.menus;
 
 import beans.YourTravel;
+import utils.*;
 
 public class TypeMenu {
     public static YourTravel RunTypeMenu(YourTravel Tours) {
