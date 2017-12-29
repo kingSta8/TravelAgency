@@ -7,10 +7,7 @@
 package utils;
 
 import beans.YourTravel;
-import utils.menus.DaysMenu;
-import utils.menus.FoodMenu;
-import utils.menus.SortingMenu;
-import utils.menus.TypeMenu;
+import utils.menus.*;
 
 public class SortTour {
     public static YourTravel SortingTour(YourTravel Tours) {
@@ -31,7 +28,7 @@ public class SortTour {
                         FoodMenu.RunFoodMenu(Tours);
                         break;
                     case Constants.TRANSPORT:
-
+                        TransportMenu.RunTransportMenu(Tours);
                         break;
                     case Constants.EXIT:
                         return Tours;

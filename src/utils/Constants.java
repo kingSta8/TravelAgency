@@ -21,6 +21,7 @@ public class Constants {
     public static final int TYPE = REST;
     public static final int ONE_NINE = TYPE;
     public static final int NO_FOOD = ONE_NINE;
+    public static final int BUS = NO_FOOD;
     public static final int SORT_TOUR = 2;
     public static final int EXCURSION = SORT_TOUR;
     public static final int TEN_TWENTY = EXCURSION;
