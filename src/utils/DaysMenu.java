@@ -12,17 +12,17 @@ public class DaysMenu {
             System.out.println("2. 10-20");
             System.out.println("3. 20+");
             System.out.println(Constants.PREVIOUS_MENU);
-            System.out.println(Constants.CHOSE_COMMAND);
+            System.out.print(Constants.CHOSE_COMMAND);
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.ONE_NINE:
-
+                        OneNine.SortingByOneNine(Tours);
                         break;
                     case Constants.TEN_TWENTY:
-
+                        TenTwenty.SortingByTenTwenty(Tours);
                         break;
                     case Constants.TWENTY_PLUS:
-
+                        TwentyPlus.SortingByTwentyPlus(Tours);
                         break;
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
