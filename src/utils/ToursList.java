@@ -6,7 +6,10 @@
 */
 package utils;
 
+import beans.Food;
 import beans.Tour;
+import beans.Transport;
+import beans.Type;
 
 import java.util.ArrayList;
 import java.util.List;

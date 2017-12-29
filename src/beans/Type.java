@@ -4,7 +4,7 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils;
+package beans;
 
 public enum Type {
     отдых, экскурсия, лечение, шоппинг, круиз

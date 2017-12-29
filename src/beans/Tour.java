@@ -6,10 +6,15 @@
 */
 package beans;
 
-import utils.Food;
-import utils.Transport;
-import utils.Type;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class Tour {
 
     private String name;
@@ -18,40 +23,4 @@ public class Tour {
     private Food food;
     private Transport transport;
 
-    public Tour(String name, Type type, int days, Food food, Transport transport) {
-        super();
-        this.name = name;
-        this.type = type;
-        this.days = days;
-        this.food = food;
-        this.transport = transport;
-    }
-
-    public Tour() {
-    }
-
-    @Override
-    public String toString() {
-        return "Tour [name=" + name + ", type=" + type + ", days=" + days + ", food=" + food + ", transport=" + transport + "]";
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public int getDays() {
-        return days;
-    }
-
-    public Food getFood() {
-        return food;
-    }
-
-    public Transport getTransport() {
-        return transport;
-    }
 }

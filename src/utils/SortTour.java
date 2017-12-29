@@ -21,7 +21,7 @@ public class SortTour {
                         TypeMenu.RunTypeMenu(Tours);
                         break;
                     case Constants.DAYS:
-
+                        DaysMenu.RunDaysMenu(Tours);
                         break;
                     case Constants.FOOD:
 
@@ -30,7 +30,12 @@ public class SortTour {
 
                         break;
                     case Constants.EXIT:
-                        break;
+                        return Tours;
+                    default:
+                        System.out.println(Constants.REPEAT_MESSAGE);
+                }
+                if (number == Constants.EXIT) {
+                    break;
                 }
             }
         }

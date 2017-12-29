@@ -13,7 +13,7 @@ public class SortingMenu {
         System.out.println("2. По количеству дней.");
         System.out.println("3. По типу питания.");
         System.out.println("4. По виду транспорта.");
-        System.out.println("0. Вернуться к предыдущему меню.");
+        System.out.println(Constants.PREVIOUS_MENU);
         System.out.print("Ваш выбор: ");
     }
 }
