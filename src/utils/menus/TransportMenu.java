@@ -1,3 +1,9 @@
+/*
+*Project TravelAgency
+* @version 1.0
+* @date December2017
+* @author George Stahovsky
+*/
 package utils.menus;
 
 import beans.YourTravel;
@@ -20,9 +26,17 @@ public class TransportMenu {
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.BUS:
-                        /*SortByBus.SortingByBus(Tours);*/
+                        SortByBus.SortingByBus(Tours);
                         break;
-
+                    case Constants.PLANE:
+                        SortByPlane.SortingByPlane(Tours);
+                        break;
+                    case Constants.TRAIN:
+                        SortByTrain.SortingByTrain(Tours);
+                        break;
+                    case Constants.LINER:
+                        SortByLiner.SortingByLiner(Tours);
+                        break;
                     case Constants.EXIT:
                         return Tours;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                     default:
