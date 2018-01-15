@@ -7,8 +7,8 @@ import beans.YourTravel;
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByBus {
-    public static YourTravel SortingByBus(YourTravel Tours) {
+public class SortByTrain {
+    public static YourTravel SortingByTrain(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -17,8 +17,8 @@ public class SortByBus {
             Iterator<Tour> iter = list.iterator();
             while (iter.hasNext()) {
                 Tour next = iter.next();
-                if (next.getTransport().equals(Transport.лайнер) ||
-                        next.getTransport().equals(Transport.поезд) ||
+                if (next.getTransport().equals(Transport.автобус) ||
+                        next.getTransport().equals(Transport.лайнер) ||
                         next.getTransport().equals(Transport.самолет))
                     iter.remove();
             }

@@ -20,9 +20,14 @@ public class TransportMenu {
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.BUS:
-                        /*SortByBus.SortingByBus(Tours);*/
+                        SortByBus.SortingByBus(Tours);
                         break;
-
+                    case Constants.PLANE:
+                        SortByPlane.SortingByPlane(Tours);
+                    case Constants.TRAIN:
+                        SortByTrain.SortingByTrain(Tours);
+                    case Constants.LINER:
+                        SortByLiner.SortingByLiner(Tours);
                     case Constants.EXIT:
                         return Tours;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                     default:
