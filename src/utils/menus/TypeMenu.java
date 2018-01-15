@@ -9,11 +9,10 @@ package utils.menus;
 import beans.YourTravel;
 import utils.*;
 
-public class TypeMenu {
+public class TypeMenu extends Menu {
     public static YourTravel RunTypeMenu(YourTravel Tours) {
 
-        int number = -1;
-        while (number != Constants.EXIT) {
+        while (true) {
         System.out.println();
         System.out.println("Выберите тип тура.");
         System.out.println("1. Отдых.");
@@ -21,9 +20,7 @@ public class TypeMenu {
         System.out.println("3. Лечение.");
         System.out.println("4. Шоппинг.");
         System.out.println("5. Круиз.");
-        System.out.println(Constants.PREVIOUS_MENU);
-        System.out.print(Constants.CHOSE_COMMAND);
-
+        PrintMenuConstants();
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.REST:
@@ -46,11 +43,7 @@ public class TypeMenu {
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
                 }
-                if (number == Constants.EXIT) {
-                    break;
-                }
             }
         }
-        return Tours;
     }
 }

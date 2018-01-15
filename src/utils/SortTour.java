@@ -12,8 +12,7 @@ import utils.menus.*;
 public class SortTour {
     public static YourTravel SortingTour(YourTravel Tours) {
 
-        int number = -1;
-        while (number != Constants.EXIT) {
+        while (true) {
             System.out.println();
             SortingMenu.PrintSortingMenu();
             while (true) {
@@ -35,11 +34,7 @@ public class SortTour {
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
                 }
-                if (number == Constants.EXIT) {
-                    break;
-                }
             }
         }
-        return Tours;
     }
 }

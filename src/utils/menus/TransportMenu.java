@@ -9,7 +9,7 @@ package utils.menus;
 import beans.YourTravel;
 import utils.*;
 
-public class TransportMenu {
+public class TransportMenu extends Menu {
     public static YourTravel RunTransportMenu(YourTravel Tours) {
 
         int number = -1;
@@ -20,9 +20,7 @@ public class TransportMenu {
             System.out.println("2. Самолет");
             System.out.println("3. Поезд");
             System.out.println("4. Лайнер");
-            System.out.println(Constants.PREVIOUS_MENU);
-            System.out.print(Constants.CHOSE_COMMAND);
-
+            PrintMenuConstants();
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.BUS:

@@ -31,7 +31,7 @@ public class TravelAgencyTest {
                     Tours = SortTour.SortingTour(Tours);
                     break;
                 case Constants.SHOW_CHOICE:
-                /*Tours = ShowChoice.ShowingChoice(Tours);*/
+                    Tours = ShowChoice.ShowingChoice(Tours);
                     break;
                 case Constants.EXIT:
                     System.out.println(Constants.GOOD_BYE_MESSAGE);

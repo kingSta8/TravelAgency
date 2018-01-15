@@ -13,14 +13,14 @@ import beans.YourTravel;
 
 public class SelectTour {
 
-    public static final String TOUR_LIST = "Список предлагаемых туров.";
+    private static final String TOUR_LIST = "Список предлагаемых туров.";
 
     public static YourTravel SelectingTour(YourTravel Tours) {
 
         List<Tour> list = ToursList.fillToursList();
 
-        int number = -1;
-        while (number != Constants.EXIT) {
+        int number;
+        while (true) {
             System.out.println();
             System.out.println(TOUR_LIST);
             PrintTourList.printTourList(list);

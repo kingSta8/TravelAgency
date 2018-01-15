@@ -3,7 +3,7 @@ package utils.menus;
 import beans.YourTravel;
 import utils.*;
 
-public class FoodMenu {
+public class FoodMenu extends Menu {
     public static YourTravel RunFoodMenu(YourTravel Tours) {
         int number = -1;
         while (number != Constants.EXIT) {
@@ -15,8 +15,7 @@ public class FoodMenu {
             System.out.println("4. AllInclusive");
             System.out.println("5. AllInclusivePremium");
             System.out.println("6. UltraAllInclusive");
-            System.out.println(Constants.PREVIOUS_MENU);
-            System.out.print(Constants.CHOSE_COMMAND);
+            PrintMenuConstants();
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.NO_FOOD:
