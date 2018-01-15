@@ -4,11 +4,9 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils.sort.days;
+package utils;
 
 import beans.YourTravel;
-import utils.Constants;
-import utils.Keyboard;
 import utils.menus.*;
 
 public class SortTour {

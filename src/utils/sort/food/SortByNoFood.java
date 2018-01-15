@@ -2,7 +2,6 @@ package utils.sort.food;
 
 import beans.Food;
 import beans.Tour;
-import beans.Type;
 import beans.YourTravel;
 import utils.Constants;
 import utils.Keyboard;
