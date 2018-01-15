@@ -1,14 +1,18 @@
-package utils;
+package utils.sort.food;
 
 import beans.Food;
 import beans.Tour;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByAllInclusive {
-    public static YourTravel SortingByAllInclusive(YourTravel Tours) {
+public class SortByAllInclusivePremium {
+    public static YourTravel SortingByAllInclusivePremium(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -20,7 +24,7 @@ public class SortByAllInclusive {
                 if (next.getFood().equals(Food.FullBoard) ||
                         next.getFood().equals(Food.None) ||
                         next.getFood().equals(Food.FullBoardPlus) ||
-                        next.getFood().equals(Food.AllInclusivePremium) ||
+                        next.getFood().equals(Food.AllInclusive) ||
                         next.getFood().equals(Food.UltraAllInclusive))
                     iter.remove();
             }

@@ -1,20 +1,18 @@
-/*
-*Project TravelAgency
-* @version 1.0
-* @date December2017
-* @author George Stahovsky
-*/
-package utils;
+package utils.sort.type;
 
 import beans.Tour;
 import beans.Type;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByRest {
-    public static YourTravel SortingByRest(YourTravel Tours) {
+public class SortByExcursion {
+    public static YourTravel SortingByExcursion(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -23,7 +21,7 @@ public class SortByRest {
             Iterator<Tour> iter = list.iterator();
             while (iter.hasNext()) {
                 Tour next = iter.next();
-                if (next.getType().equals(Type.круиз) || next.getType().equals(Type.шоппинг) || next.getType().equals(Type.лечение) || next.getType().equals(Type.экскурсия))
+                if (next.getType().equals(Type.круиз) || next.getType().equals(Type.шоппинг) || next.getType().equals(Type.лечение) || next.getType().equals(Type.отдых))
                     iter.remove();
             }
             PrintTourList.printTourList(list);
@@ -31,7 +29,7 @@ public class SortByRest {
             System.out.print(Constants.CHOSE_TOUR);
             number = Keyboard.InputNumber();
             if (number == Constants.EXIT) {
-                break;/*!!!!!!!!!!!!!!!!!!!!!!*/
+                break;/*!!!!!!!!!!!!!!!!!!!!!*/
             }
             if (number < 1 || number - 1 >= list.size() ) {
                 System.out.println(Constants.REPEAT_MESSAGE);

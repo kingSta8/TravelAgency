@@ -1,14 +1,19 @@
-package utils;
+package utils.sort.food;
 
 import beans.Food;
 import beans.Tour;
+import beans.Type;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByFullBoardPlus {
-    public static YourTravel SortingByFullBoardPlus(YourTravel Tours) {
+public class SortByNoFood {
+    public static YourTravel SortingByNoFood(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -18,7 +23,7 @@ public class SortByFullBoardPlus {
             while (iter.hasNext()) {
                 Tour next = iter.next();
                 if (next.getFood().equals(Food.FullBoard) ||
-                        next.getFood().equals(Food.None) ||
+                        next.getFood().equals(Food.FullBoardPlus) ||
                         next.getFood().equals(Food.AllInclusive) ||
                         next.getFood().equals(Food.AllInclusivePremium) ||
                         next.getFood().equals(Food.UltraAllInclusive))

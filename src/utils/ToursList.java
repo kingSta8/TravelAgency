@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ToursList {
- static List<Tour> fillToursList() {
+ public static List<Tour> fillToursList() {
      List<Tour> list = new ArrayList<Tour>();
      list.add(new Tour("Супер Прага,Новый год 2018", Type.отдых, 4, Food.UltraAllInclusive, Transport.автобус));
      list.add(new Tour("Загадочный Лондон", Type.экскурсия, 10, Food.AllInclusivePremium, Transport.самолет));

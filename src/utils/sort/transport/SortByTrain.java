@@ -4,11 +4,15 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils;
+package utils.sort.transport;
 
 import beans.Tour;
 import beans.Transport;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;

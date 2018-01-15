@@ -8,6 +8,7 @@ package utils.menus;
 
 import beans.YourTravel;
 import utils.*;
+import utils.sort.type.*;
 
 public class TypeMenu extends Menu {
     public static YourTravel RunTypeMenu(YourTravel Tours) {

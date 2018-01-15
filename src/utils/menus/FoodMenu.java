@@ -2,6 +2,7 @@ package utils.menus;
 
 import beans.YourTravel;
 import utils.*;
+import utils.sort.food.*;
 
 public class FoodMenu extends Menu {
     public static YourTravel RunFoodMenu(YourTravel Tours) {

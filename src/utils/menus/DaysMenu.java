@@ -2,6 +2,9 @@ package utils.menus;
 
 import beans.YourTravel;
 import utils.*;
+import utils.sort.days.SortByOneNine;
+import utils.sort.days.SortByTenTwenty;
+import utils.sort.days.SortByTwentyPlus;
 
 public class DaysMenu extends Menu {
     public static YourTravel RunDaysMenu(YourTravel Tours) {

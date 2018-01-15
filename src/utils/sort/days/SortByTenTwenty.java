@@ -1,14 +1,23 @@
-package utils;
+/*
+*Project TravelAgency
+* @version 1.0
+* @date December2017
+* @author George Stahovsky
+*/
+package utils.sort.days;
 
 import beans.Tour;
-import beans.Type;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByCruise {
-    public static YourTravel SortingByCruise(YourTravel Tours) {
+public class SortByTenTwenty {
+    public static YourTravel SortingByTenTwenty(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -17,8 +26,14 @@ public class SortByCruise {
             Iterator<Tour> iter = list.iterator();
             while (iter.hasNext()) {
                 Tour next = iter.next();
-                if (next.getType().equals(Type.экскурсия) || next.getType().equals(Type.шоппинг) || next.getType().equals(Type.лечение) || next.getType().equals(Type.отдых))
-                    iter.remove();
+                for (int i=1; i<10; i++) {
+                    if (next.getDays() == i)
+                        iter.remove();
+                }
+                for (int i=20; i<100; i++) {
+                    if (next.getDays() == i)
+                        iter.remove();
+                }
             }
             PrintTourList.printTourList(list);
             System.out.println(Constants.RETURN_MESSAGE);

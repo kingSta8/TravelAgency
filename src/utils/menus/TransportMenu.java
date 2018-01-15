@@ -8,6 +8,10 @@ package utils.menus;
 
 import beans.YourTravel;
 import utils.*;
+import utils.sort.transport.SortByBus;
+import utils.sort.transport.SortByLiner;
+import utils.sort.transport.SortByPlane;
+import utils.sort.transport.SortByTrain;
 
 public class TransportMenu extends Menu {
     public static YourTravel RunTransportMenu(YourTravel Tours) {

@@ -1,14 +1,18 @@
-package utils;
+package utils.sort.food;
 
+import beans.Food;
 import beans.Tour;
-import beans.Type;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByShopping {
-    public static YourTravel SortingByShopping(YourTravel Tours) {
+public class SortByAllInclusive {
+    public static YourTravel SortingByAllInclusive(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -17,7 +21,11 @@ public class SortByShopping {
             Iterator<Tour> iter = list.iterator();
             while (iter.hasNext()) {
                 Tour next = iter.next();
-                if (next.getType().equals(Type.круиз) || next.getType().equals(Type.лечение) || next.getType().equals(Type.экскурсия) || next.getType().equals(Type.отдых))
+                if (next.getFood().equals(Food.FullBoard) ||
+                        next.getFood().equals(Food.None) ||
+                        next.getFood().equals(Food.FullBoardPlus) ||
+                        next.getFood().equals(Food.AllInclusivePremium) ||
+                        next.getFood().equals(Food.UltraAllInclusive))
                     iter.remove();
             }
             PrintTourList.printTourList(list);
@@ -25,7 +33,7 @@ public class SortByShopping {
             System.out.print(Constants.CHOSE_TOUR);
             number = Keyboard.InputNumber();
             if (number == Constants.EXIT) {
-                break;/*!!!!!!!!!!!!!!!!!!!!!*/
+                break;/*!!!!!!!!!!!!!!!!!!!!!!*/
             }
             if (number < 1 || number - 1 >= list.size() ) {
                 System.out.println(Constants.REPEAT_MESSAGE);

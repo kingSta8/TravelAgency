@@ -1,20 +1,18 @@
-/*
-*Project TravelAgency
-* @version 1.0
-* @date December2017
-* @author George Stahovsky
-*/
-package utils;
+package utils.sort.food;
 
+import beans.Food;
 import beans.Tour;
-import beans.Transport;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByLiner {
-    public static YourTravel SortingByLiner(YourTravel Tours) {
+public class SortByFullBoard {
+    public static YourTravel SortingByFullBoard(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -23,9 +21,11 @@ public class SortByLiner {
             Iterator<Tour> iter = list.iterator();
             while (iter.hasNext()) {
                 Tour next = iter.next();
-                if (next.getTransport().equals(Transport.автобус) ||
-                        next.getTransport().equals(Transport.самолет) ||
-                        next.getTransport().equals(Transport.поезд))
+                if (next.getFood().equals(Food.None) ||
+                        next.getFood().equals(Food.FullBoardPlus) ||
+                        next.getFood().equals(Food.AllInclusive) ||
+                        next.getFood().equals(Food.AllInclusivePremium) ||
+                        next.getFood().equals(Food.UltraAllInclusive))
                     iter.remove();
             }
             PrintTourList.printTourList(list);

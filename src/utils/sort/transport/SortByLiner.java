@@ -4,17 +4,21 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils;
+package utils.sort.transport;
 
 import beans.Tour;
 import beans.Transport;
 import beans.YourTravel;
+import utils.Constants;
+import utils.Keyboard;
+import utils.PrintTourList;
+import utils.ToursList;
 
 import java.util.Iterator;
 import java.util.List;
 
-public class SortByBus {
-    public static YourTravel SortingByBus(YourTravel Tours) {
+public class SortByLiner {
+    public static YourTravel SortingByLiner(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
         while (number != Constants.EXIT) {
@@ -23,9 +27,9 @@ public class SortByBus {
             Iterator<Tour> iter = list.iterator();
             while (iter.hasNext()) {
                 Tour next = iter.next();
-                if (next.getTransport().equals(Transport.лайнер) ||
-                        next.getTransport().equals(Transport.поезд) ||
-                        next.getTransport().equals(Transport.самолет))
+                if (next.getTransport().equals(Transport.автобус) ||
+                        next.getTransport().equals(Transport.самолет) ||
+                        next.getTransport().equals(Transport.поезд))
                     iter.remove();
             }
             PrintTourList.printTourList(list);
