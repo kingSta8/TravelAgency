@@ -11,23 +11,21 @@ import utils.menus.*;
 
 public class SortTour {
     public static YourTravel SortingTour(YourTravel Tours) {
-
-        while (true) {
             System.out.println();
             SortingMenu.PrintSortingMenu();
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.TYPE:
-                        TypeMenu.RunTypeMenu(Tours);
+                        Tours = TypeMenu.RunTypeMenu(Tours);
                         break;
                     case Constants.DAYS:
-                        DaysMenu.RunDaysMenu(Tours);
+                        Tours = DaysMenu.RunDaysMenu(Tours);
                         break;
                     case Constants.FOOD:
-                        FoodMenu.RunFoodMenu(Tours);
+                        Tours = FoodMenu.RunFoodMenu(Tours);
                         break;
                     case Constants.TRANSPORT:
-                        TransportMenu.RunTransportMenu(Tours);
+                        Tours = TransportMenu.RunTransportMenu(Tours);
                         break;
                     case Constants.EXIT:
                         return Tours;
@@ -35,6 +33,5 @@ public class SortTour {
                         System.out.println(Constants.REPEAT_MESSAGE);
                 }
             }
-        }
     }
 }

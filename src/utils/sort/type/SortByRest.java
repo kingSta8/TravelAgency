@@ -9,10 +9,7 @@ package utils.sort.type;
 import beans.Tour;
 import beans.Type;
 import beans.YourTravel;
-import utils.Constants;
-import utils.Keyboard;
-import utils.PrintTourList;
-import utils.ToursList;
+import utils.*;
 
 import java.util.Iterator;
 import java.util.List;
@@ -21,7 +18,7 @@ public class SortByRest {
     public static YourTravel SortingByRest(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         int number = -1;
-        while (number != Constants.EXIT) {
+        while (true) {
             System.out.println();
             System.out.println(Constants.YOUR_CRITERION);
             Iterator<Tour> iter = list.iterator();
@@ -35,6 +32,7 @@ public class SortByRest {
             System.out.print(Constants.CHOSE_TOUR);
             number = Keyboard.InputNumber();
             if (number == Constants.EXIT) {
+                Tours = SortTour.SortingTour(Tours);
                 break;/*!!!!!!!!!!!!!!!!!!!!!!*/
             }
             if (number < 1 || number - 1 >= list.size() ) {

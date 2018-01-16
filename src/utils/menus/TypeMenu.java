@@ -12,8 +12,6 @@ import utils.sort.type.*;
 
 public class TypeMenu extends Menu {
     public static YourTravel RunTypeMenu(YourTravel Tours) {
-
-        while (true) {
         System.out.println();
         System.out.println("Выберите тип тура.");
         System.out.println("1. Отдых.");
@@ -25,7 +23,7 @@ public class TypeMenu extends Menu {
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.REST:
-                        SortByRest.SortingByRest(Tours);
+                        Tours = SortByRest.SortingByRest(Tours);
                         break;
                     case Constants.EXCURSION:
                         SortByExcursion.SortingByExcursion(Tours);
@@ -40,11 +38,11 @@ public class TypeMenu extends Menu {
                         SortByCruise.SortingByCruise(Tours);
                         break;
                     case Constants.EXIT:
-                        return Tours;/*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+                        Tours = SortTour.SortingTour(Tours);
+                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
                 }
             }
-        }
     }
 }
