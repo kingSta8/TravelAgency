@@ -13,31 +13,28 @@ import utils.Constants;
 import utils.Keyboard;
 import utils.PrintTourList;
 import utils.ToursList;
+import utils.menus.text.TransPortMenu;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class SortByLiner {
     public static YourTravel SortingByLiner(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
-        int number = -1;
-        while (number != Constants.EXIT) {
+        int number;
+        while (true) {
             System.out.println();
             System.out.println(Constants.YOUR_CRITERION);
-            Iterator<Tour> iter = list.iterator();
-            while (iter.hasNext()) {
-                Tour next = iter.next();
-                if (next.getTransport().equals(Transport.автобус) ||
-                        next.getTransport().equals(Transport.самолет) ||
-                        next.getTransport().equals(Transport.поезд))
-                    iter.remove();
-            }
+            list.removeIf(next -> next.getTransport().equals(Transport.автобус) ||
+                    next.getTransport().equals(Transport.самолет) ||
+                    next.getTransport().equals(Transport.поезд));
             PrintTourList.printTourList(list);
             System.out.println(Constants.RETURN_MESSAGE);
             System.out.print(Constants.CHOSE_TOUR);
             number = Keyboard.InputNumber();
             if (number == Constants.EXIT) {
-                break;/*!!!!!!!!!!!!!!!!!!!!!!*/
+                System.out.println();
+                TransPortMenu.PrintTransportMEnu();
+                break;
             }
             if (number < 1 || number - 1 >= list.size() ) {
                 System.out.println(Constants.REPEAT_MESSAGE);

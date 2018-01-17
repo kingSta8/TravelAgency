@@ -6,7 +6,7 @@
 */
 import beans.*;
 import utils.*;
-import utils.menus.MainMenu;
+import utils.menus.text.MainMenu;
 import utils.SortTour;
 
 import java.util.ArrayList;

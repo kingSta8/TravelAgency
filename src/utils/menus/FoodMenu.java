@@ -1,50 +1,48 @@
+/*
+*Project TravelAgency
+* @version 1.0
+* @date December2017
+* @author George Stahovsky
+*/
 package utils.menus;
 
 import beans.YourTravel;
 import utils.*;
+import utils.menus.text.FoOdMenu;
+import utils.menus.text.SortingMenu;
 import utils.sort.food.*;
 
 public class FoodMenu extends Menu {
     public static YourTravel RunFoodMenu(YourTravel Tours) {
-        int number = -1;
-        while (number != Constants.EXIT) {
             System.out.println();
-            System.out.println("Выберите тип питания.");
-            System.out.println("1. Без питания");
-            System.out.println("2. FullBoard");
-            System.out.println("3. FullBoardPlus");
-            System.out.println("4. AllInclusive");
-            System.out.println("5. AllInclusivePremium");
-            System.out.println("6. UltraAllInclusive");
-            PrintMenuConstants();
+            FoOdMenu.PrintFoodMenu();
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.NO_FOOD:
-                        SortByNoFood.SortingByNoFood(Tours);
+                        Tours = SortByNoFood.SortingByNoFood(Tours);
                         break;
                     case Constants.FULL_BOARD:
-                        SortByFullBoard.SortingByFullBoard(Tours);
+                        Tours = SortByFullBoard.SortingByFullBoard(Tours);
                         break;
                     case Constants.FULL_BOARD_PLUS:
-                        SortByFullBoardPlus.SortingByFullBoardPlus(Tours);
+                        Tours = SortByFullBoardPlus.SortingByFullBoardPlus(Tours);
                         break;
                     case Constants.ALL_INCLUSIVE:
-                        SortByAllInclusive.SortingByAllInclusive(Tours);
+                        Tours = SortByAllInclusive.SortingByAllInclusive(Tours);
                         break;
                     case Constants.ALL_INCLUSIVE_PREMIUM:
-                        SortByAllInclusivePremium.SortingByAllInclusivePremium(Tours);
+                        Tours = SortByAllInclusivePremium.SortingByAllInclusivePremium(Tours);
                         break;
                     case Constants.ULTRA_ALL_INCLUSIVE:
-                        SortByUltraAllInclusive.SortingByUltraAllInclusive(Tours);
+                        Tours = SortByUltraAllInclusive.SortingByUltraAllInclusive(Tours);
                         break;
+                    case Constants.EXIT:
+                        System.out.println();
+                        SortingMenu.PrintSortingMenu();
+                        return Tours;
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
                 }
-                if (number == Constants.EXIT) {
-                    break;
-                }
             }
-        }
-        return Tours;
     }
 }

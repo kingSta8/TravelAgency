@@ -4,7 +4,9 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils.menus;
+package utils.menus.text;
+
+import utils.menus.Menu;
 
 public class SortingMenu extends Menu {
     public static void PrintSortingMenu() {

@@ -8,6 +8,7 @@ package utils;
 
 import beans.YourTravel;
 import utils.menus.*;
+import utils.menus.text.SortingMenu;
 
 public class SortTour {
     public static YourTravel SortingTour(YourTravel Tours) {

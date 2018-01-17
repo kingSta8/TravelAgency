@@ -8,38 +8,35 @@ package utils.menus;
 
 import beans.YourTravel;
 import utils.*;
+import utils.menus.text.SortingMenu;
+import utils.menus.text.TyPeMenu;
 import utils.sort.type.*;
 
 public class TypeMenu extends Menu {
     public static YourTravel RunTypeMenu(YourTravel Tours) {
         System.out.println();
-        System.out.println("Выберите тип тура.");
-        System.out.println("1. Отдых.");
-        System.out.println("2. Экскурсии.");
-        System.out.println("3. Лечение.");
-        System.out.println("4. Шоппинг.");
-        System.out.println("5. Круиз.");
-        PrintMenuConstants();
+        TyPeMenu.PrintTypeMenu();
             while (true) {
                 switch (Keyboard.InputNumber()) {
                     case Constants.REST:
                         Tours = SortByRest.SortingByRest(Tours);
                         break;
                     case Constants.EXCURSION:
-                        SortByExcursion.SortingByExcursion(Tours);
+                        Tours = SortByExcursion.SortingByExcursion(Tours);
                         break;
                     case Constants.TREATMENT:
-                        SortByTreatment.SortingByTreatment(Tours);
+                        Tours = SortByTreatment.SortingByTreatment(Tours);
                         break;
                     case Constants.SHOPPING:
-                        SortByShopping.SortingByShopping(Tours);
+                        Tours = SortByShopping.SortingByShopping(Tours);
                         break;
                     case Constants.CRUISE:
-                        SortByCruise.SortingByCruise(Tours);
+                        Tours = SortByCruise.SortingByCruise(Tours);
                         break;
                     case Constants.EXIT:
-                        Tours = SortTour.SortingTour(Tours);
-                         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+                        System.out.println();
+                        SortingMenu.PrintSortingMenu();
+                        return Tours;
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
                 }

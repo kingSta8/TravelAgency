@@ -10,15 +10,12 @@ import java.util.List;
 import beans.Tour;
 import beans.YourTravel;
 
-
 public class SelectTour {
 
     private static final String TOUR_LIST = "Список предлагаемых туров.";
 
     public static YourTravel SelectingTour(YourTravel Tours) {
-
         List<Tour> list = ToursList.fillToursList();
-
         int number;
         while (true) {
             System.out.println();

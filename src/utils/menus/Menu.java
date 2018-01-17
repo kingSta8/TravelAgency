@@ -8,8 +8,8 @@ package utils.menus;
 
 import utils.Constants;
 
-class Menu {
-    static void PrintMenuConstants() {
+public class Menu {
+    public static void PrintMenuConstants() {
         System.out.println(Constants.PREVIOUS_MENU);
         System.out.print(Constants.CHOSE_COMMAND);
     }

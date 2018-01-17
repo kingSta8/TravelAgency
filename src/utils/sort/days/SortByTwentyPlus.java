@@ -12,6 +12,7 @@ import utils.Constants;
 import utils.Keyboard;
 import utils.PrintTourList;
 import utils.ToursList;
+import utils.menus.text.DaYsMenu;
 
 import java.util.Iterator;
 import java.util.List;
@@ -19,8 +20,8 @@ import java.util.List;
 public class SortByTwentyPlus {
     public static YourTravel SortingByTwentyPlus(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
-        int number = -1;
-        while (number != Constants.EXIT) {
+        int number;
+        while (true) {
             System.out.println();
             System.out.println(Constants.YOUR_CRITERION);
             Iterator<Tour> iter = list.iterator();
@@ -36,7 +37,9 @@ public class SortByTwentyPlus {
             System.out.print(Constants.CHOSE_TOUR);
             number = Keyboard.InputNumber();
             if (number == Constants.EXIT) {
-                break;/*!!!!!!!!!!!!!!!!!!!!!*/
+                System.out.println();
+                DaYsMenu.PrintDaysMenu();
+                break;
             }
             if (number < 1 || number - 1 >= list.size() ) {
                 System.out.println(Constants.REPEAT_MESSAGE);

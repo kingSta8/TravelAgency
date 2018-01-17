@@ -4,7 +4,7 @@
 * @date December2017
 * @author George Stahovsky
 */
-package utils.menus;
+package utils.menus.text;
 
 import utils.Constants;
 
