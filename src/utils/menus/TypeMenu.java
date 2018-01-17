@@ -36,6 +36,7 @@ public class TypeMenu extends Menu {
                     case Constants.EXIT:
                         System.out.println();
                         SortingMenu.PrintSortingMenu();
+                        System.out.println("Hello");
                         return Tours;
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
