@@ -28,7 +28,7 @@ public class SortTour {
                         Tours = TransportMenu.RunTransportMenu(Tours);
                         break;
                     case Constants.EXIT:
-                        return Tours;
+                      return Tours;
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
                 }

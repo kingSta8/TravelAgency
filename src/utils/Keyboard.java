@@ -12,7 +12,7 @@ public class Keyboard {
 
     public static int InputNumber(){
         Scanner in = new Scanner(System.in);
-        int command = -1;
+        int command;
         command = in.nextInt();
         return command;
     }
