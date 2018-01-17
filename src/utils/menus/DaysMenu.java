@@ -35,6 +35,7 @@ public class DaysMenu extends Menu {
                         return Tours;
                     default:
                         System.out.println(Constants.REPEAT_MESSAGE);
+                        System.out.print(Constants.CHOSE_COMMAND);
                 }
             }
     }
