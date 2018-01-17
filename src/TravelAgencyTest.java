@@ -8,18 +8,14 @@ import beans.*;
 import utils.*;
 import utils.menus.text.MainMenu;
 import utils.SortTour;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class TravelAgencyTest {
-
-    public static void main(String[] args) {
+public class TravelAgencyTest  {
+    public static void main(String[] args){
         System.out.println(Constants.HELLO_MESSAGE);
-
-        List<Tour> Travel = new ArrayList<Tour>();
+        List<Tour> Travel = new ArrayList<>();
         YourTravel Tours = new YourTravel("ChosenTours", 0, Travel);
-
         while (true) {
             System.out.println();
             System.out.println(Constants.HELLO_MESSAGE2);

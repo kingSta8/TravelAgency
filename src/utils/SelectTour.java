@@ -30,7 +30,7 @@ public class SelectTour {
                 break;
             }
             if (number < 1 || number - 1 >= list.size() ) {
-                System.out.println(Constants.REPEAT_MESSAGE);
+                System.out.print(Constants.REPEAT_MESSAGE);
                 continue;
             }
             Tours.getTours().add(list.get(number-1));
