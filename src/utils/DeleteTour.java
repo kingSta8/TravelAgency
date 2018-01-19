@@ -8,7 +8,8 @@ class DeleteTour {
     static YourTravel DelitingTour(YourTravel Tours) {
         List<Tour> tours = Tours.getTours();
         System.out.print("Введите номер тура, который вы хотите удалить: ");
-        int number = Keyboard.InputNumber();
+        String key = Keyboard.InputNumber();
+        int number = Integer.parseInt(key);
         Tours.getTours().remove(tours.get(number-1));
         return Tours;
     }

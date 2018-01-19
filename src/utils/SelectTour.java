@@ -16,7 +16,7 @@ public class SelectTour {
 
     public static YourTravel SelectingTour(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
-        int number;
+        String key;
         while (true) {
             System.out.println();
             System.out.println(TOUR_LIST);
@@ -24,9 +24,10 @@ public class SelectTour {
             System.out.println();
             System.out.println(Constants.RETURN_MESSAGE);
             System.out.print(Constants.CHOSE_TOUR);
-            number = Keyboard.InputNumber();
+            key = Keyboard.InputNumber();
+            int number = Integer.parseInt(key);
             System.out.println();
-            if (number == Constants.EXIT) {
+            if (number == 0) {
                 break;
             }
             if (number < 1 || number - 1 >= list.size() ) {

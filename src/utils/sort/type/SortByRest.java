@@ -16,7 +16,7 @@ import java.util.List;
 public class SortByRest {
     public static YourTravel SortingByRest(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
-        int number;
+        String key;
         while (true) {
             System.out.println();
             System.out.println(Constants.YOUR_CRITERION);
@@ -27,8 +27,9 @@ public class SortByRest {
             PrintTourList.printTourList(list);
             System.out.println(Constants.RETURN_MESSAGE);
             System.out.print(Constants.CHOSE_TOUR);
-            number = Keyboard.InputNumber();
-            if (number == Constants.EXIT) {
+            key = Keyboard.InputNumber();
+            int number = Integer.parseInt(key);
+            if (number == 0) {
                 System.out.println();
                 TyPeMenu.PrintTypeMenu();
                 break;

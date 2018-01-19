@@ -17,7 +17,8 @@ public class ShowChoice {
            System.out.println("Введите 1, если согласны с выбром.");
            System.out.println("Введите 2, если хотите что-то удалить.");
            System.out.print(Constants.CHOSE_COMMAND);
-           int key = Keyboard.InputNumber();
+           String Key = Keyboard.InputNumber();
+            int key = Integer.parseInt(Key);
             if (key == 2) {
                 Tours = DeleteTour.DelitingTour(Tours);
                 Tours = ShowingChoice(Tours);
@@ -27,7 +28,7 @@ public class ShowChoice {
             }
         }
         if (Tours.getNumberOfTours() == 0) {
-            System.out.print("не были выбраны Вами. Пожалуйста, выберите интересующий вас тур.");
+            System.out.print("Туры не были выбраны Вами. Пожалуйста, выберите интересующий вас тур.");
             System.out.println();
         }
         return Tours;
