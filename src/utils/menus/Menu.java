@@ -9,7 +9,7 @@ package utils.menus;
 import utils.Constants;
 
 public class Menu {
-    public static void PrintMenuConstants() {
+    protected static void PrintMenuConstants() {
         System.out.println(Constants.PREVIOUS_MENU);
         System.out.print(Constants.CHOSE_COMMAND);
     }

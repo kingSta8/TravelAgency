@@ -18,6 +18,11 @@ import utils.menus.text.FoOdMenu;
 import java.util.List;
 
 public class SortByFullBoard {
+    /**
+     * Sorts tour list by FullBoard food type and proposes to add tour to the collection.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel SortingByFullBoard(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         String key;

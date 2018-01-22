@@ -18,6 +18,11 @@ import utils.menus.text.TransPortMenu;
 import java.util.List;
 
 public class SortByBus {
+    /**
+     * Sorts tour list by bus transport type and proposes to add tour to the collection.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel SortingByBus(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         String key;

@@ -11,6 +11,11 @@ import utils.menus.*;
 import utils.menus.text.SortingMenu;
 
 public class SortTour {
+    /**
+     * Displays the sort menu.
+     * @param Tours
+     * @return
+     */
     public static YourTravel SortingTour(YourTravel Tours) {
             System.out.println();
             SortingMenu.PrintSortingMenu();

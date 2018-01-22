@@ -18,6 +18,11 @@ import utils.menus.text.FoOdMenu;
 import java.util.List;
 
 public class SortByAllInclusive {
+    /**
+     * Sorts tour list by AllInclusive food type and proposes to add tour to the collection.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel SortingByAllInclusive(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         String key;

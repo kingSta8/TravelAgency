@@ -11,6 +11,10 @@ import beans.Tour;
 import java.util.List;
 
 public class PrintTourList {
+    /**
+     * Prints list of tours.
+     * @param tours
+     */
     public static void printTourList(List<Tour> tours) {
         int index = 0;
         for (Tour tour : tours) {

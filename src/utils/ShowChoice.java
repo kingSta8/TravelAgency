@@ -6,9 +6,13 @@ import beans.YourTravel;
 import java.util.List;
 
 public class ShowChoice {
+    /**
+     * Displays a list of user-selected tours.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel ShowingChoice(YourTravel Tours) {
         System.out.println();
-
         if (Tours.getNumberOfTours() != 0) {
            List<Tour> tours = Tours.getTours();
            System.out.println("Туры ");

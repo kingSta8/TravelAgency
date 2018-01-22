@@ -18,6 +18,11 @@ import utils.menus.text.TyPeMenu;
 import java.util.List;
 
 public class SortByShopping {
+    /**
+     * Sorts tour list by shopping type and proposes to add tour to the collection.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel SortingByShopping(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         String key;

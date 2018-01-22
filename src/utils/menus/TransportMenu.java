@@ -16,6 +16,11 @@ import utils.sort.transport.SortByPlane;
 import utils.sort.transport.SortByTrain;
 
 public class TransportMenu extends Menu {
+    /**
+     * Displays the transport menu.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel RunTransportMenu(YourTravel Tours) {
             System.out.println();
             TransPortMenu.PrintTransportMEnu();

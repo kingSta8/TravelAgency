@@ -18,6 +18,11 @@ import utils.menus.text.TyPeMenu;
 import java.util.List;
 
 public class SortByExcursion {
+    /**
+     * Sorts tour list by excursion type and proposes to add tour to the collection.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel SortingByExcursion(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         String key;

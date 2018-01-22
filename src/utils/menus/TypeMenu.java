@@ -13,6 +13,11 @@ import utils.menus.text.TyPeMenu;
 import utils.sort.type.*;
 
 public class TypeMenu extends Menu {
+    /**
+     * Displays the type menu.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel RunTypeMenu(YourTravel Tours) {
         System.out.println();
         TyPeMenu.PrintTypeMenu();

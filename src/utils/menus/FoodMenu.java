@@ -13,6 +13,11 @@ import utils.menus.text.SortingMenu;
 import utils.sort.food.*;
 
 public class FoodMenu extends Menu {
+    /**
+     * Displays the food menu.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel RunFoodMenu(YourTravel Tours) {
             System.out.println();
             FoOdMenu.PrintFoodMenu();

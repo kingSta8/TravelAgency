@@ -6,6 +6,9 @@
 */
 package utils;
 
+/**
+ * List of using constants.
+ */
 public class Constants {
     public static final String HELLO_MESSAGE = "Вас приветствует турагентство 'Неистовый турист'! Мы поможем Вам в подборе интересующего Вас отдыха.";
     public static final String HELLO_MESSAGE2 = "Пожалуйста, выберите интересующую Вас категорию.";

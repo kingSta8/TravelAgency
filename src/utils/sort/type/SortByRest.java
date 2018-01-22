@@ -15,6 +15,11 @@ import utils.menus.text.TyPeMenu;
 import java.util.List;
 
 public class SortByRest {
+    /**
+     * Sorts tour list by rest type and proposes to add tour to the collection.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel SortingByRest(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         String key;

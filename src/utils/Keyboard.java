@@ -11,6 +11,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Keyboard {
+    /**
+     * Takes the value entered from the keyboard and checks it for the correctness of the input.
+     * @return value entered from the keyboard
+     */
     public static String InputNumber(){
         Scanner in = new Scanner(System.in);
         String command;

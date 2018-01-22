@@ -15,6 +15,11 @@ import utils.sort.days.SortByTenTwenty;
 import utils.sort.days.SortByTwentyPlus;
 
 public class DaysMenu extends Menu {
+    /**
+     * Displays the days menu.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel RunDaysMenu(YourTravel Tours) {
             System.out.println();
             DaYsMenu.PrintDaysMenu();

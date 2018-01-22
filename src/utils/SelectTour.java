@@ -15,6 +15,11 @@ public class SelectTour {
 
     private static final String TOUR_LIST = "Список предлагаемых туров.";
 
+    /**
+     * Offers selecting tour from the list and add it to the collection.
+     * @param Tours current collection
+     * @return edited collection
+     */
     public static YourTravel SelectingTour(YourTravel Tours) {
         List<Tour> list = ToursList.fillToursList();
         String key;
