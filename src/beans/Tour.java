@@ -15,12 +15,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Tour {
 
+public class Tour {
     private String name;
     private Type type;
     private int days;
     private Food food;
     private Transport transport;
-
 }

@@ -18,9 +18,9 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+
 public class YourTravel {
     private String name;
     private int numberOfTours;
-    private List<Tour> tours = new ArrayList<Tour>();
-
+    private List<Tour> tours = new ArrayList<>();
 }

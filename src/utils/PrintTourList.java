@@ -6,8 +6,8 @@
 */
 package utils;
 
-import utils.ToursList;
 import beans.Tour;
+
 import java.util.List;
 
 public class PrintTourList {

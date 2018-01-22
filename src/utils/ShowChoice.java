@@ -2,6 +2,7 @@ package utils;
 
 import beans.Tour;
 import beans.YourTravel;
+
 import java.util.List;
 
 public class ShowChoice {
@@ -20,7 +21,7 @@ public class ShowChoice {
            String Key = Keyboard.InputNumber();
             int key = Integer.parseInt(Key);
             if (key == 2) {
-                Tours = DeleteTour.DelitingTour(Tours);
+                Tours = DeleteTour.DeletingTour(Tours);
                 Tours = ShowingChoice(Tours);
             }
             if (key == 1) {

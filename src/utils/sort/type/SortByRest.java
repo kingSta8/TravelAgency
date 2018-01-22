@@ -11,6 +11,7 @@ import beans.Type;
 import beans.YourTravel;
 import utils.*;
 import utils.menus.text.TyPeMenu;
+
 import java.util.List;
 
 public class SortByRest {

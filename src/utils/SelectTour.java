@@ -6,9 +6,10 @@
 */
 package utils;
 
-import java.util.List;
 import beans.Tour;
 import beans.YourTravel;
+
+import java.util.List;
 
 public class SelectTour {
 
