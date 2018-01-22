@@ -15,9 +15,7 @@ import java.util.List;
 public class TravelAgencyTest  {
     /**
      * Starts program(main method).
-     *
      * @param args
-     *            Command line arguments.
      */
     public static void main(String[] args){
         System.out.println(Constants.HELLO_MESSAGE);

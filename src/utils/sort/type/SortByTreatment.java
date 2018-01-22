@@ -50,6 +50,7 @@ public class SortByTreatment {
             Tours.getTours().add(list.get(number-1));
             Tours.setNumberOfTours(Tours.getNumberOfTours() + 1);
             System.out.println("Тур " + "\"" + list.get(number - 1).getName() + "\" " + "добавлен.");
+            list.remove(list.get(number-1));
         }
         return Tours;
     }
